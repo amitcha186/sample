@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+     
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="myscript.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Internshala</title>
+</head>
+<body>
+   
+    <div class="card m-4">
+        <div class="row">
+            <div class="col-sm-3">
+              <div class="card">
+                <div class="card-body">
+                   <h6>Nic shchadov <i class="fa fa-plus-square" aria-hidden="true"></i></h6>
+                   <br>
+                   <button type="button" class="btn btn-success btn-block text-left"><i class="fa fa-inbox"></i>  Inbox</button>
+                   <button type="button" class="btn btn-light btn-block text-left"><i class="fa fa-bell" aria-hidden="true"></i>  Alert</button>
+                   <button type="button" class="btn btn-light btn-block text-left"><i class="fa fa-th-large" aria-hidden="true"></i> Overview</button>
+                  <br><h6>Podcast</h6><br>
+                  <button type="button" class="btn btn-light btn-block text-left"><i class="fa fa-microphone" aria-hidden="true"></i>  Episods</button>
+                  <button type="button" class="btn btn-light btn-block text-left"><i class="fa fa-file" aria-hidden="true"></i> Media</button>
+                  <button type="button" class="btn btn-light btn-block text-left"><i class="fa fa-bars" aria-hidden="true"></i>  Materials</button>
+                   <button type="button" class="btn btn-light btn-block text-left"><i class="fa fa-phone" aria-hidden="true"></i> Contacts</button>
+                  <br><h6>Analitics</h6> <br>
+                  <button type="button" class="btn btn-light btn-block text-left"><i class="fa fa-bell" aria-hidden="true"></i>  Subscribers</button>
+                  <button type="button" class="btn btn-light btn-block text-left"><i class="fa fa-link" aria-hidden="true"></i> Channels</button>
+                  <button type="button" class="btn btn-light btn-block text-left"><i class="fa fa-bandcamp" aria-hidden="true"></i>  Integration</button>
+                   <button type="button" class="btn btn-light btn-block text-left"><i class="fa fa-line-chart" aria-hidden="true"></i> Report</button>
+                  </div>
+              </div>
+            </div>
+            <div class="col-sm-9">
+              <div class="card">
+                
+                <div class="container bootstrap snippet">
+                  
+                  <div class="row grid-divider">
+                  <div class="col-md-3">
+                    <div class="col-padding">
+                      <h6 class="text-secondary">New Subscribers</h6>
+                      <h5 class="font-weight-bold">5,097</h5>
+                      <h6 class="text-success"><i class="fa fa-arrow-up" aria-hidden="true"></i> +33.45%</h6>
+                       
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="col-padding">
+                      <h6 class="text-secondary">Streams</h6>
+                      <h5 class="font-weight-bold">47,403</h5>
+                      <h6 class="text-danger"><i class="fa fa-arrow-up" aria-hidden="true"></i> -112.45%</h6>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="col-padding">
+                      <h6 class="text-secondary">Engagement Rate</h6>
+                      <h5 class="font-weight-bold">25.28</h5>
+                      <h6 class="text-success"><i class="fa fa-arrow-up" aria-hidden="true"></i> +62.52%</h6>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="col-padding">
+                      <h6 class="text-secondary">Avg. watch Time</h6>
+                      <h5 class="font-weight-bold">45.4 min</h5>
+                      <h6 class="text-success"><i class="fa fa-arrow-up" aria-hidden="true"></i> +4.46%</h6>
+                    </div>
+                  </div>
+                  </div>
+              </div>
+                
+              <div class="container">
+                <div class="card">
+                  <div class="row">
+                    <div class="col-sm-7">
+                      <h6 class="text-secondary">  Audience</h6>
+                      <h5 class="font-weight-bold">  301,097</h5>
+                      <p class="text-success"><i class="fa fa-arrow-up" aria-hidden="true"></i> +58.31% </p>
+                      <style>
+                        #chartdiv {
+                          width: 100%;
+                          height: 500px;
+                        }
+                        
+                        </style>
+                        
+                        <!-- Resources -->
+                        <script src="https://cdn.amcharts.com/lib/4/core.js"></script>
+                        <script src="https://cdn.amcharts.com/lib/4/charts.js"></script>
+                        <script src="https://cdn.amcharts.com/lib/4/themes/animated.js"></script>
+                        
+                        <!-- Chart code -->
+                        <script>
+                        am4core.ready(function() {
+                        
+                        // Themes begin
+                        am4core.useTheme(am4themes_animated);
+                        // Themes end
+                        
+                        // Create chart instance
+                        var chart = am4core.create("chartdiv", am4charts.XYChart);
+                        
+                        // Add data
+                        chart.data = [{
+                          "Audiance": "DEC 21",
+                          "visits": 270
+                        }, {
+                          "Audiance": "DEC 22",
+                          "visits": 280
+                        }, {
+                          "Audiance": "DEC 23",
+                          "visits": 300
+                        }, {
+                          "Audiance": "DEC 24",
+                          "visits": 320
+                        }, {
+                          "Audiance": "DEC 25",
+                          "visits": 350
+                        }, {
+                          "Audiance": "DEC 26",
+                          "visits": 400
+                        }, {
+                          "Audiance": "DEC 27",
+                          "visits": 500
+                        } ];
+                        
+                        // Create axes
+                        
+                        var categoryAxis = chart.xAxes.push(new am4charts.CategoryAxis());
+                        categoryAxis.dataFields.category = "Audiance";
+                        categoryAxis.renderer.grid.template.location = 0;
+                        categoryAxis.renderer.minGridDistance = 30;
+                        
+                        categoryAxis.renderer.labels.template.adapter.add("dy", function(dy, target) {
+                          if (target.dataItem && target.dataItem.index & 2 == 2) {
+                            return dy + 25;
+                          }
+                          return dy;
+                        });
+                        
+                        var valueAxis = chart.yAxes.push(new am4charts.ValueAxis());
+                        
+                        // Create series
+                        var series = chart.series.push(new am4charts.ColumnSeries());
+                        series.dataFields.valueY = "visits";
+                        series.dataFields.categoryX = "Audiance";
+                        series.name = "Visits";
+                        series.columns.template.tooltipText = "{categoryX}: [bold]{valueY}[/]";
+                        series.columns.template.fillOpacity = .8;
+                        
+                        var columnTemplate = series.columns.template;
+                        columnTemplate.strokeWidth = 2;
+                        columnTemplate.strokeOpacity = 1;
+                        
+                        }); // end am4core.ready()
+                        </script>
+                        
+                        <!-- HTML -->
+                        <div id="chartdiv"></div>
+                        <br>
+                        <div class="container">
+                          <div class="card">
+                              <h6 class="text-secondary">  Popular episodes:</h6>
+                              <ul class="list-group">
+                                  <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    1.Kuji podcost 33:Live
+                                  
+                                    <span class="badge badge-primary badge-pill">1,99min</span>
+                                  </li>
+                                  <li class="list-group-item d-flex justify-content-between align-items-center">
+                                      2.Kuji podcast 20:Live
+                                    <span class="badge badge-primary badge-pill">1,54min</span>
+                                  </li>
+                                  <li class="list-group-item d-flex justify-content-between align-items-center">
+                                      3.Kuji podcast 24:Live
+                                    <span class="badge badge-primary badge-pill">1,04min</span>
+                                  </li>
+                                </ul>
+                          </div>
+                        </div>
+
+
+                    </div>
+                    <div class="col-sm-5">
+                          <br> <br> <br>
+                        <div class="container">
+                          <div class="card m-3 p-3">
+                              <br>
+                              <h6 class="text-secondary">Audience Satisfaction  <i class="fa fa-ellipsis-h" aria-hidden="true"></i></h6>  <br>
+                              <div class="progress ">
+                                  <div class="progress-bar bg-success" role="progressbar" style="width: 76.76%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">76.76%</div>
+                                </div> <br>
+                                <h6 class="text-secondary">Based on likes and doslikes   <i class="fa fa-smile-o text-success" aria-hidden="true"></i></h6>
+                          </div>
+                        </div><br>
+                         <div class="container">
+                           <div class="card bg-success text-white m-3 p-4"><br>
+                              <h6>webinars  <i class="fa fa-ellipsis-h" aria-hidden="true"></i></h6>
+                                <h5>Learn how  you</h5>
+                                <h5>can earn more than</h5>
+                                <h5>20% each month</h5>
+                                <h6>joinour webinar and learn how</h6>
+                                <h6>to increase more then 20%</h6>
+                                <h6>your monthly income</h6><br><br><h6>learn more</h6>
+
+                           </div>
+                         </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              </div>
+            </div>
+          </div>
+    </div> 
+   
+ 
+</body>
+</html>
